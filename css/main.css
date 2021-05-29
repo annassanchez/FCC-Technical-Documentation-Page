@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+/*text*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Mono', monospace;
+  /*font-style: italic;*/
+}
+
+h1 {
+  font-style: italic;
+}
+
+p, li, a, code, tr {
+  font-family: 'Montserrat', sans-serif;  
+}
+
+li {
+  margin: 5px 0px 15px 40px;
+}
+
+/*blocks of code*/
+
+q, code {
+  font-family: 'Courier New', monospace;
+}
+
+q, code {
+  background: gainsboro;
+}
+
+code{
+  width: 100%;
+  /*boder-left: 5px solid red;*/
+}
+
+.code-output {
+  background: gainsboro;
+  padding: 35px 0px 35px 25px;
+  width: 100%;
+  border-left: 5px solid gold;
+}
+
+.wrong-output {
+  background: gainsboro;
+  padding: 35px 10px;
+  width: 100%;
+  border-left: 5px solid red;
+}
+
+/*navbar*/
+
+#navbar{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  padding: 15px;
+  border-right: 5px solid #003153;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0px;
+  box-sizing: border-box;
+}
+
+.nav-link {
+  border-bottom: 1px black solid;
+  margin: 0px -10px;
+  padding: 0px 0px 15px 0px;
+  /*height here affects the the link size*/
+  /*height: calc(100/5)px;*/
+}
+
+.nav-link:hover {
+  /*background: green;*/
+  color: #003153;
+  font-size: 1.2em;
+}
+
+/*main-doc*/
+
+#main-doc{
+  position: absolute;
+  margin-left: 320px;
+  padding: 20px;
+}
+
+/*tables*/
+
+.description_element {
+  width: 75%;
+}
+
+table, td, th {  
+  border: 1px solid #003153;
+  text-align: left;
+}
+
+table {
+  width: 75%;
+  border-collapse: collapse;
+  border-width: 2px;
+}
+
+th {
+  border-width: 2px;
+  background: gainsboro;
+}
+
+td, th {
+  padding: 0px 7px;
+}
+
+/*footer*/
+
+.footer {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  /*width: 100%;*/
+  height: 4rem;
+  pading: 2px;
+  background: #003153;
+  margin: 20px -20px -20px -50px;
+  /*margin-bottom: -20px;*/
+  text-align: center;
+  color: white;  
+}
+
+.footer-link {
+  color: gold;
+}
+
+.footer-link:hover {
+  color: white;
+  font-size: 1.1em;
+}
+
+@media screen and (min-width: 1080px){
+}
+
+@media screen and (max-width: 1080px) and (min-width: 320px) {
+  p {
+    text-size: 0.9em;
+  }
+  .footer {
+    height: 5rem;
+  }
+  #navbar {
+    width: 37%;
+  }
+  #main-doc{
+    position: absolute;
+    margin-left: 37%;
+    padding: 2%;
+  }
+  table {
+    width: 100%;
+  }
+  .footer {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 320px){
+p {
+    text-size: 0.9em;
+  }
+  .footer {
+    height: 5rem;
+  }
+  #navbar {
+    width: 37%;
+  }
+  #main-doc{
+    position: absolute;
+    margin-left: 37%;
+    padding: 2%;
+  }
+  table {
+    width: 100%;
+  }
+  .footer {
+    margin: 0px;
+  }
+}
