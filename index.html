@@ -1,0 +1,257 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<head>
+  <!-- link to main stylesheet -->
+	<title>HTML Documentation Page</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>
+      <h1>HTML Documentation</h1>
+    </header>
+    <div class="links">
+    <a class="nav-link" href="#Introduction"> Introduction</a><br>
+    <a class="nav-link" href="#HTML_Anatomy"> HTML Anatomy</a><br>
+    <a class="nav-link" href="#Nesting_Elements"> Nesting Elements</a><br>
+    <a class="nav-link" href="#HTML_Elements"> HTML Elements</a><br>
+    <a class="nav-link" href="#HTML_Attributes"> HTML Attributes</a><br>
+    </div>
+    </head>  
+</nav>
+
+<main id="main-doc">
+  
+  <section class="main-section" id="Introduction">
+    <header id="introduction_01_"><h1> Introduction </h1>
+    </header>
+    <h3>What is HTML?</h3>
+    <p>HTML stands for Hyper Text Markup Language. This language is the standard markup language for creating Web pages.<br>
+      HTML describes the structure of a web page. By using a series of elements, HTML tells the browser how to display the content.<br>
+      HTML, as a markup language uses tags to identify content by using labels such as "this is a heading", "this is a paragraph", "this is a link", etc.</p>
+    
+  </section>
+  
+   <section class="main-section" id="HTML_Anatomy">
+     <header id="Anatomy_HTML_"><h1> HTML Anatomy</h1>
+    </header>
+     <h3> HTML element</h3>
+    <p>Let's explore the paragraph element further:</p>
+     <p class="code-output"><code>&lt;p&gt;Hello world&lt;/p&gt;</code>
+    <li>The opening tag ("&lt;p&gt;"): this consists of the name of the element (in this case p), wrapped in opening and closing angle brackets. Ths states where the element begins or starts to take effect -- in this case, the start of the paragraph</li>
+     <li>The closing tag ("&lt;/p&gt;"): is the same as the opening tag, but it inclues a forward slash ("/") before the element's name. This states where the element ends -- in this case, it ends where the paragraphs ends.</li>
+     <li>The content ("Hello world"): this is the content of the element, which in this case is just text.</li>
+     <li>The element ("&lt;p&gt;Hello world&lt;/p&gt;"): The opening tag, the closing one and the contact together compromise the element.</li>
+     <p class="code-output"><code>&lt;p class="id"&gt;Hello world&lt;/p&gt;</code></p>
+     <p>Elements can also have attributes. Attributes bring extra information about the element that you don't want to apeear in the actual content. <br>
+       Here, class is the attribute name and "id" is the value.<br>
+       There are multiple attributes, according to the base element that is being used in HTML.
+     </p>
+     <h3>HTML documents</h3>
+    <p>An HTML element is defined by a start tag, some content and an end tag. Here are some examples:</p>
+    <p class="code-output"><code>
+      &lt;!DOCTYPE html&gt;<br>
+      &lt;html&gt;<br>
+      &lt;head&gt;<br>
+        &lt;title&gt;Page Title&lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+          &lt;h1&gt;My first heading&lt;/h1&gt;<br>
+          &lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+        &lt;/body&gt;<br>
+      &lt;/html&gt;<br>
+      </code></p>
+    <p>Example explained</p>
+    <li>The &lt;!DOCTYPE html&gt; declaration defines that this is an HTML document</li>
+    <li>The &lt;html&gt; element is the root element of an HTML page</li>
+    <li>The &lt;head&gt; element contains the meta information about the HTML page</li>
+    <li>The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+    <li>The &lt;body&gt; element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+    <li>The &lt;h1&gt; element defines a large heading</li>
+    <li>The &lt;p&gt; element defines a paragraph</li>
+  </section>
+  
+  <section class="main-section" id="Nesting_Elements">
+    <header id="Nesting_Elements_"><h1> Nesting Elements</h1>
+    </header>
+    <p>You can put elelemnts inside other elements too -- is called nesting. If we wanted to give some emphasis to our "Hello World" statement, for example <strong>Hello World</strong>, we would wrap the whole element in a <q>&lt;strong&gt;</q> element.</p>
+    <p class="code-output"><code>&lt;p&gt; &lt;strong&gt;Hello World&lt;/strong&gt;&lt;/p&gt;</code></p>
+    <p>However, you do need to make sure that your elements are properly nested. In the example above, first the &lt;p&gt; element was opened and then came the &lt;strong&gt; element; therefore, wee need to close first the &lt;/strong&gt; element and then the &lt;/p&gt; element</p>
+    <p  class="wrong-output"><code>&lt;p&gt;&lt;strong&gt;Hello World&lt;/p&gt;&lt;/strong&gt;</code></p>
+    <p>The elements have to open and close correctly, so that they are clearly inside or outside one another. If they overlap as shown above, then your web browser will try to make the best guess at what you were trying to say, which can lead to unexpected results -- including not working.</p>
+  </section>
+  
+  <section class="main-section" id="HTML_Elements">
+    <header id="HTML_elements"><h1> HTML Elements</h1>
+    </header>
+    <p>The HTML element is everything from the start tag to the end tag:</p>
+    <p class="code-output"><code>&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</code></p>
+    <p>Here are some examples of other html elements</p>
+    <h3>Main root</h3>
+    <table>
+      <tr>
+        <th>Start Tag</th>
+        <th>Description</th>
+        <th>End Tag</th>
+      </tr>
+      <tr>
+        <td><p>&lt;html&gt;</p></td>
+        <td class="description_element"><p>The &lt;html&gt; element represents the root (top-level element) of an HTML document, so it is also refered to as the root element. All elements must be descendents of this element.</p></td>
+        <td><p>none</p></td>
+      </tr>
+    </table>
+    <h3>Document metadata</h3>
+    <p>Metadata contains information on the page. This includes the styles, scripts and data to help software (search engines, browsers...) use and render the page.</p>
+    <table>
+      <tr>
+        <th>Start tag</th>
+        <th>Description</th>
+        <th>End tag</th>
+      </tr>
+      <tr>
+        <td><p>&lt;base&gt;</p></td>
+        <td class="description_element"><p>The  &lt;base&gt; element specifies the base URL to use for relating the URLs within a document.</p></td>
+        <td><p>&lt;/base&gt;</p></td>
+      </tr>
+      <tr>
+        <td><p>&lt;head&gt;</p></td>
+        <td class="description_element"><p>This element contains machine-readable information (metadata) about the docunet, as title, scripts or stylesheets.</p></td>
+        <td><p>&lt;/head&gt;</p></td>
+        <tr>
+        <td><p>&lt;link&gt;</p></td>
+        <td class="description_element"><p>The HTML Rxternal Resource Link element specifies the relationship between the current document and an external source. This element is most commonly used to link to CSS.</p></td>
+        <td><p>&lt;/link&gt;</p></td>
+      </tr>
+      <tr>
+        <td><p>&lt;meta&gt;</p></td>
+        <td class="description_element"><p>This element represents Metadata that cannot be represented by other HTML meta-related elements, like base, link, script, style or title.</p></td>
+        <td><p>&lt;/meta&gt;</p></td>
+      </tr>
+      <tr>
+        <td><p>&lt;title&gt;</p></td>
+        <td class="description_element"><p>This element defines the document's title that is shown in a Browser's title bar or a page's tab.</p></td>
+        <td><p>&lt;/title&gt;</p></td>
+      </tr>
+    </table>
+    <h3>Sectioning root</h3>
+    <table>
+      <tr>
+        <th>Start Tag</th>
+        <th>Description</th>
+        <th>End Tag</th>
+      </tr>
+      <tr>
+        <td><p>&lt;body&gt;</p></td>
+        <td class="description_element"><p>The &lt;body&gt; element represents the content of an HTML document. There can only be one element in a document.</p></td>
+        <td><p>&lt;/body&gt;</p></td>
+      </tr>
+    </table>
+    <h3>Content sectioning</h3>
+    <table>
+      <tr>
+        <th>Start tag</th>
+        <th>Description</th>
+        <th>End tag</th>
+      </tr>
+      <tr>
+        <td><p>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</p></td>
+        <td class="description_element"><p>The HTML elements represent six levels of section headings. &lt;h1&gt; is the highest section level and &lt;h6&gt; is the lowest.</p></td>
+        <td><p>&lt;/h1&gt;, &lt;/h2&gt;, &lt;/h3&gt;, &lt;/h4&gt;, &lt;/h5&gt;, &lt;/h6&gt;</p></td>
+      </tr>
+      <tr>
+        <td><p>&lt;footer&gt;</p></td>
+        <td class="description_element"><p>This element represents a footer for ists nearest sectioning content or sectioning root element. A footer tipically contains information about the author of the section, copyright data or links to related documents.</p></td>
+        <td><p>&lt;/footer&gt;</p></td>
+        <tr>
+        <td><p>&lt;header&gt;</p></td>
+        <td class="description_element"><p>This element represents introductory content, tipically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name...</p></td>
+        <td><p>&lt;/header&gt;</p></td>
+      </tr>
+      <tr>
+        <td><p>&lt;main&gt;</p></td>
+        <td class="description_element"><p>This element represents the dominant content of the body of a document. The main content area consists od content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.</p></td>
+        <td><p>&lt;/main&gt;</p></td>
+      </tr>
+      <tr>
+        <td><p>&lt;nav&gt;</p></td>
+        <td class="description_element"><p>This element represents a section of a page wose purpose is to provide navigation links, either within the current document or others. Common examples of navigtation sections are menus, table of contents, indexes...</p></td>
+        <td><p>&lt;/nav&gt;</p></td>
+      </tr>
+      <tr>
+        <td><p>&lt;section&gt;</p></td>
+        <td class="description_element"><p>This element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it.</p></td>
+        <td><p>&lt;/section&gt;</p></td>
+      </tr>
+    </table>
+    <p>Here's a couple of resources on HTML elements:</p>
+    <li>Here's <a class="" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank"> Mozilla's Developer Notes</a></li>
+    <li>Here's <a class="" href="https://www.w3schools.com/tags/ref_byfunc.asp" target="_blank"> W3School</a> list of HTML elements</li>
+  </section>
+  
+  <section class="main-section" id="HTML_Attributes">
+    <header id="HTML_Attributes_"><h1> HTML Attributes </h1>
+    </header>
+    <p>Elements in HTML have attributes; these are additional values that configure the elements or adjust their behavior in various ways to meet the criteria users want.</p>
+    <p>Attributes usually come in name/value pairs like: name="value"</p>
+    <table>
+      <tr>
+        <th>Attribute name</th>
+        <th>Elements</th>
+        <th>Desctription</th>
+      </tr>
+      <tr>
+        <td><p>href</p></td>
+        <td><p>&lt;a&gt;</p></td>
+        <td class="description_element"><p>The &lt;a&gt; tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to.</p></td>
+      </tr>
+      <tr>
+        <td><p>src</p></td>
+        <td><p>&lt;img&gt;</p></td>
+        <td class="description_element"><p>The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed</p></td>
+      </tr>
+      <tr>
+        <td><p>width, height</p></td>
+        <td><p>&lt;img&gt;</p></td>
+        <td class="description_element"><p>The &lt;img&gt; tag should also contain the width anf height attribuets, which specifies the width and height of the image.</p></td>
+      </tr>
+      <tr>
+        <td><p>alt</p></td>
+        <td><p>&lt;img&gt;</p></td>
+        <td class="description_element"><p>The required alt attribute for the &lt;img&gt; tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, an error on the src attribute or the usage of a screen reader.</p></td>
+      </tr>
+      <tr>
+        <td><p>style</p></td>
+        <td><p>&lt;...&gt;</p></td>
+        <td class="description_element"><p>TThe style attribute is used to add style to an element, such as color, font, size...</p></td>
+      </tr>
+    </table>
+    <h4>link example</h4>
+    <p class="code-output"><code> &lt;a href="https://www.google.com/" target="_blank"&gt; check this link out&lt;/a&gt; </code></p>
+    <p>The <q>href</q> attribute is the one that specifies the outsider link.<br>
+      The <q>target</q> attribute with the value <q>_blank</q> opens the link in a new window.
+    </p>
+       
+    
+    <h4>img example</h4>
+    <p class="code-output"><code> &lt;img alt="image of a girl" width="300" height="500" src="img_girl.jpg"&gt; </code></p>
+    <p>There are two forms to specify the URL in the src attribute</p>
+    <li>Absolute URL: Links to an external image, hosted on another website.</li>
+    <li>Relative URL: links to an image hosted within the website.</li>
+  </section>
+   <footer class="footer">
+     <p>Developed with ❤️ by annassanchez, you can find me in <a class="footer-link" href="https://github.com/annassanchez" target="_blank">codepen</a>, <a class="footer-link"href="https://codepen.io/annassanchez" target="_blank">github</a> or <a class="footer-link" href="https://twitter.com/amoaloskiwis" target="_blank">twitter</a> | FCC Product Landing Page assignment</p>
+</footer>
+
+</main>
+</body>
